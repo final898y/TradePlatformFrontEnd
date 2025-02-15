@@ -22,6 +22,11 @@ const router = createRouter({
       name: 'fetch',
       component: () => import('../views/FetchView.vue'),
     },
+    {
+      path: '/ecpay',
+      name: 'ecpay',
+      component: () => import('../views/EcpayView.vue'),
+    },
   ],
 })
 
