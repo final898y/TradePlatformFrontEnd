@@ -27,6 +27,11 @@ const router = createRouter({
       name: 'ecpay',
       component: () => import('../views/EcpayView.vue'),
     },
+    {
+      path: '/ecpayresult',
+      name: 'ecpayresult',
+      component: () => import('../views/EcpayResultView.vue'),
+    },
   ],
 })
 
