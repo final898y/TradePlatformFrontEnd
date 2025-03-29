@@ -15,6 +15,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/fetch">Fetch</RouterLink>
         <RouterLink to="/ecpay">ECpay</RouterLink>
+        <RouterLink to="/linepay">Linepay</RouterLink>
       </nav>
     </div>
   </header>

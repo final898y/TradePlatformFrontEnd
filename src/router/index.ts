@@ -32,6 +32,25 @@ const router = createRouter({
       name: 'ecpayresult',
       component: () => import('../views/EcpayResultView.vue'),
     },
+    {
+      path: '/linepay',
+      name: 'linepay',
+      component: () => import('../views/LinepayView.vue'),
+      children: [
+        {
+          // 当 /user/:id/profile 匹配成功
+          // UserProfile 将被渲染到 User 的 <router-view> 内部
+          path: 'confirm',
+          component: () => import('../components/payment/LinepayConfirm.vue'),
+        },
+        {
+          // 当 /user/:id/posts 匹配成功
+          // UserPosts 将被渲染到 User 的 <router-view> 内部
+          path: 'cancel',
+          component: () => import('../components/payment/LinepayCancel.vue'),
+        },
+      ],
+    },
   ],
 })
 

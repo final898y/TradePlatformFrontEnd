@@ -52,7 +52,8 @@ async function sendtoecpay() {
     TotalAmount: 30000,
     TradeDesc: '測試交易',
     ItemName: 'Iphone16',
-    ReturnURL: 'https://2f56-180-177-110-209.ngrok-free.app/pay/ecpay/getpayresult ',
+    //此處須根據ngrok的webhook網址進行更改
+    ReturnURL: 'https://b041-180-177-110-209.ngrok-free.app/pay/ecpay/getpayresult ',
     ChoosePayment: 'ALL',
     EncryptType: 1,
     ClientBackURL: 'http://localhost:5173/ecpayresult'
